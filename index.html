@@ -20,6 +20,8 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 		<link rel="stylesheet" href="plugin/appearance/appearance.css">
+
+		<link rel="stylesheet" href="modal.css">
 	</head>
 	<body>
 		<div class="line top"></div>
@@ -340,15 +342,19 @@
 
 					</script>
 				</section>
-			<section data-markdown>
-				<textarea data-template>
-					### Graduelle Verbreitung, verlaufend von Individuen an die Gesellschaft
+				<section data-markdown>
+				  <script type="text/template">
+						### Graduelle Verbreitung, verlaufend von Individuen an die Gesellschaft
 
-					- „Meme als Einheiten kultureller Informationen, die von Person zu Person weitergegeben werden, allmählich jedoch das Ausmaß eines gemeinsamen gesellschaftlichen Phänomens annehmen.“
-					- Ausbreitung auf Mikroebene, jedoch Auswirkung auf Makroebene: Meme prägen die Einstellungen, Verhaltensweisen und Handlungen von gesellschaftlichen Gruppen.
-					- Teilen / „Sharing“ als grundlegende Aktivität des digitalen Zeitalters
-				</textarea>
-			</section>
+						- „Meme als Einheiten kultureller Informationen, die von Person zu Person weitergegeben werden, allmählich jedoch das Ausmaß eines gemeinsamen gesellschaftlichen Phänomens annehmen.“
+						- Ausbreitung auf Mikroebene, jedoch Auswirkung auf Makroebene: Meme prägen die Einstellungen, Verhaltensweisen und Handlungen von gesellschaftlichen Gruppen.
+						- Teilen / „Sharing“ als grundlegende Aktivität des digitalen Zeitalters
+
+						<div style="margin: 20px; item-align: center; width= 100vw">
+							<button data-micromodal-trigger="modal-1" class="modal__btn modal__btn-primary" style="font-size: 1em">Beispiel</button>
+						</div>
+				  </script>
+				</section>
 			<section data-markdown>
 			<textarea data-template>
 				### Reproduktion durch Kopie und Imitation
@@ -554,6 +560,7 @@
   }
 </style>
 
+		<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
@@ -569,6 +576,29 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
 			});
+		</script>
+
+		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<h2 class="modal__title" id="modal-1-title">
+							Beispiel Graduelle Verbreitung
+						</h2>
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+					</header>
+					<main class="modal__content" id="modal-1-content">
+						<p>
+							• Ausbreitung auf Mikroebene (Fridays for Future + Erlangen), mit Einfluss auf Makroebene (Öffentlichkeit auf Instagram) <br>
+							• Memes prägen Einstellungen. Und Einstellungen prägen Memes
+						</p>
+						<img src="images/meme-fff1.PNG" height="220" width="auto" style="margin-top: 10px; margin-right: auto; margin-left: auto; display: block; border: 2px solid #000;"/>
+					</main>
+				</div>
+			</div>
+		</div>
+		<script>
+			MicroModal.init();
 		</script>
 	</body>
 </html>
