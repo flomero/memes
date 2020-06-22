@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="plugin/appearance/appearance.css">
 
 		<link rel="stylesheet" href="modal.css">
+
+		<link rel="stylesheet" href="hover-min.css">
 	</head>
 	<body>
 		<div class="line top"></div>
@@ -43,7 +45,7 @@
 							### Internetmeme 101
 							Zum Anfang einfach ein paar Beispiel Meme Typen der modernen Meme Culture ungefähr geordnet nach Alter (alt → jung)
 							<div style="width: 100%">
-							<i class="fas fa-arrow-down" style="font-size: 100px; margin-left: auto; margin-right: auto; text-align: center"></i>
+							<i class="fas fa-arrow-down hvr-pulse" style="font-size: 100px; margin-left: auto; margin-right: auto; text-align: center"></i>
 							</div>
 					  </script>
 					</section>
@@ -234,25 +236,25 @@
 
 							Merkmal: Nachahmungen in Form von Parodien, Remixen und MashUps
 
-							Bsp. Leave Britney Alone; Star Wars Kid, Nyan Cat…
+							Beispiele: <a class="hvr-bob" data-micromodal-trigger="modal-britney" style="cursor: pointer;">Leave Britney Alone</a>;  <a class="hvr-bob" data-micromodal-trigger="modal-starwars" style="cursor: pointer;">Star Wars Kid</a>, <a class="hvr-bob" data-micromodal-trigger="modal-nyan" style="cursor: pointer;">Nyan Cat</a>…
 
 							Verschmelzen von Popkultur, Politik und Partizipation
 
-							Memhubs:
+							**Memhubs:**
 
-							Zweck: Besprechung und Austausch
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zweck: Besprechung und Austausch
 
-							Beispiel: 4chan, 9gag oder Reddit
+							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beispiel: <a href="https://www.4chan.org/" target="_blank" class="hvr-bob">4chan</a>, <a href="https://9gag.com/" target="_blank" class="hvr-bob">9gag</a> oder <a href="https://www.reddit.com/" target="_blank" class="hvr-bob">Reddit</a>
 
-							Membegriff:
+							**Membegriff:**
 
-							schnelle Aufnahme und Verbreitung von bestimmten Ideen in Form von Text, Bild…
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; schnelle Aufnahme und Verbreitung von bestimmten Ideen in Form von Text, Bild…
 
-							**wesentliche Eigenschaft: Intertextualität**
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **wesentliche Eigenschaft: Intertextualität**
 
-							**Meme beziehen sich häufig aufeinander**
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Meme beziehen sich häufig aufeinander**
 
-							ungleich akademischer Begriff
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ungleich akademischer Begriff
 					  </textarea>
 					</section>
 					<section data-markdown>
@@ -305,7 +307,7 @@
 				  <script type="text/template">
 						## Grundeigenschaften des sich erfolgreich ausbreitenden Meme (Dawkins)
 						<div style="width: 100%">
-						<i class="fas fa-arrow-down" style="font-size: 100px; margin-left: auto; margin-right: auto; text-align: center"></i>
+						<i class="fas fa-arrow-down hvr-pulse" style="font-size: 100px; margin-left: auto; margin-right: auto; text-align: center"></i>
 						</div>
 
 				  </script>
@@ -337,7 +339,7 @@
 					<script type="text/template">
 						## Hauptattribute
 						<div style="width: 100%">
-						<i class="fas fa-arrow-down" style="font-size: 100px; margin-left: auto; margin-right: auto; text-align: center"></i>
+						<i class="fas fa-arrow-down hvr-pulse" style="font-size: 100px; margin-left: auto; margin-right: auto; text-align: center"></i>
 						</div>
 
 					</script>
@@ -597,8 +599,55 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal micromodal-slide" id="modal-britney" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+					</header>
+					<main class="modal__content" id="modal-1-content">
+						<img src="images/meme-britney1.jpg" height="220" width="auto" style="margin-top: 10px; margin-right: auto; margin-left: auto; display: block; border: 2px solid #000;"/>
+					</main>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal micromodal-slide" id="modal-starwars" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+					</header>
+					<main class="modal__content" id="modal-1-content">
+						<video width="auto" height="220" controls style="margin-top: 10px; margin-right: auto; margin-left: auto; display: block; border: 2px solid #000;">
+							  <source src="videos/starwars.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video> <br>
+							<a href="https://www.youtube.com/watch?v=HPPj6viIBmU" target="_blank">Quelle</a>
+					</main>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal micromodal-slide" id="modal-nyan" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+					</header>
+					<main class="modal__content" id="modal-1-content">
+						<img src="images/nyan.gif" height="220" width="auto" style="margin-top: 10px; margin-right: auto; margin-left: auto; display: block; border: 2px solid #000;"/>
+					</main>
+				</div>
+			</div>
+		</div>
+
 		<script>
 			MicroModal.init();
 		</script>
+
+
+
 	</body>
 </html>
